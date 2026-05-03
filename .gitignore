@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+*.pyc
+data/cookies.json
+data/bilibili_proxy.db*
+data/dash_cache/
+data/dash_cache_index.json
+data/proxy.log
+data/quality_aliases.json
+data/transcode_settings.json
+.vscode/
+*.log
+frpc.exe
+frps.exe
+frpc.ini
+*.ico

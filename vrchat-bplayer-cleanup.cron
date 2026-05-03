@@ -1,0 +1,7 @@
+# VRChat BPlayer Proxy — auto cleanup
+# Clean HLS temp dirs older than 5 minutes, every 2 minutes
+*/2 * * * * root find /tmp/hls_* -maxdepth 0 -type d -mmin +5 -exec rm -rf {} \; 2>/dev/null
+# Kill stuck ffmpeg processes every 5 minutes
+*/5 * * * * root pkill -9 -f 'ffmpeg.*bplayer' -o 2>/dev/null
+# Weekly memory optimization
+0 4 * * 0 root sync; echo 1 > /proc/sys/vm/drop_caches 2>/dev/null
