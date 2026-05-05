@@ -9,6 +9,12 @@
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.115+-00a393)](https://fastapi.tiangolo.com)
 [![License MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
+> **Looking for better playback quality and multi-viewer support?**
+>
+> Check out **[VRChat Media Pipeline](https://github.com/IoriMaboroshi/vrchat-media-pipeline)** — the successor project that preprocesses media locally with GPU acceleration and pushes to a remote server for static HLS serving. It offers VOD playback with seek support, persistent task tracking, and a full pipeline management dashboard. If you have a powerful local GPU and want the best playback experience, Media Pipeline is the recommended choice.
+>
+> This project (BPlayer Proxy Ultra) remains available for users who prefer real-time proxy streaming with minimal local processing.
+
 A high-performance DASH-to-HLS real-time transcoding proxy designed for Unity-based video players (VRChat, PotPlayer, VLC). Converts separate audio/video DASH streams into a single playable stream with hardware-accelerated transcoding.
 
 **Ultra version** adds multi-thread download, smart caching, bandwidth auto-downgrade, and a full web management dashboard.
